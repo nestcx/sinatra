@@ -1,5 +1,11 @@
 <html>
-	<head><head>
+	<head>
+		<style>
+		body {
+			background: <%= color %>;
+		}
+		</style>
+	<head>
 	<body>
 		<p>
 			The secret number is: <%= message %>
@@ -9,7 +15,8 @@
 			<input type='submit' value='Guess!' />
 		</form>
 		<p>
-			response: <%= response %>
+			Response: <%= response %>
+			<br>Guesses Left: <%= guesses_left %>
 		</p>
 	</body>
 <html>
